@@ -13,7 +13,7 @@
 	</div>
 	<!/*選項標籤*/>
 	<div id="choice">
-		<a href="PDF/首頁.pdf" target="PDFcontent">
+		<a href="page/首頁.htm" target="PDFcontent">
 		首頁 
 		</a>
 		<a href="PDF/RPG MAKER MV.pdf" target="PDFcontent">
@@ -28,12 +28,12 @@
 	</div>
 	<!/*內文(含目錄與實際內容)*/>
 	<div id="content">
-		<iframe src="PDF/首頁.pdf" name="PDFcontent" 
+		<iframe src="page/首頁.htm" name="PDFcontent" 
 		width="1283.5px" height="500px" ></iframe>
 	</div>
 	<!bottom>
 	<div style="background-color: black;">
-    	
+    	<p style="text-align: center;color: white; display: inline; margin-left: 480px">
 		<a href="" >
 			<img src="img/FB.png" width="100px">
 		</a>
@@ -42,14 +42,15 @@
 		</a>
 		<a href="" >
 			<img src="img/Gmail.png" width="100px">
-		</a>
-		<pre style="float: right; color: white;">
-		
-		https://jackken123.github.io/
-		<p id="date" style=" color: white; top: 0px; line-height: 0px; vertical-align: top;"></p>
-		</pre>
-		
-		
+		</a>		
+		</p>
+		<span style="color: white;float: right; text-align: right;">
+		<br><br>
+		<span>https://jackken123.github.io/</span> &#160&#160<br><br>
+		<span id="date" style=" color: white; top: 0px;"></span>		
+		</span>	
+
+				
 	</div>
 	
 	
@@ -57,5 +58,6 @@
 <script>
 document.getElementById("date").innerHTML = Date() + " &#160";
 </script>
+<script type="text/javascript" src="js/ie8.polyfils.min.js"></script>
 </body>
 </html>
