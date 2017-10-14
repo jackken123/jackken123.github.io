@@ -40,9 +40,7 @@
 		<a href="" >
 			<img src="img/youtube.png" width="100px">
 		</a>
-		<a href="" >
-			<img src="img/Gmail.png" width="100px">
-		</a>		
+		<img src="img/Gmail.png" width="100px" onclick="copyToClipboard('#email')" title="點擊複製信箱位址">		
 		</p>
 		<span style="color: white;float: right; text-align: right;">
 		<br><br>
@@ -53,10 +51,21 @@
 				
 	</div>
 	
-	
+
+<p id="email" style="display: none;">ChunKennoemail@gmail.com</p>
 
 <script>
 document.getElementById("date").innerHTML = Date() + " &#160";
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </body>
 </html>
