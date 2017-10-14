@@ -1,0 +1,30 @@
+div {
+	width: 1290px;
+}
+#myTitle {
+	max-height: 80px;
+	min-height: 80px;
+	background-color: #c1c1bd;
+	font-size: 60px;
+	text-shadow: 3px 3px yellow;
+	background-image: url(img/我的LOGO.png);	
+	background-position: 25px 20px;
+}
+#choice {
+	background-color: black;
+}
+#choice a {
+	border-left: 6px dotted white;
+	background-color: black;
+	/*display: inline;*/
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+#choice a:hover {
+	background-color: #555555;
+}
+#content iframe {
+	border: 3px solid black;
+}
+
