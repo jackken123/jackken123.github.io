@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RPG Maker MV</title>
+	<link rel="stylesheet" type="text/css" href="RPG Maker MV.css">
+</head>
+<body>
+	<div id="content" style="top: 0px;">	
+		<!頁面左邊目錄>
+		<div style="width: 280px; background-color: black;">	
+			<div style="color: white; float: none;" class="box">
+			<b style="font-size: 26px;">目錄</b>
+			<div class="list" style="float: none;">☆事件教學</div>
+			<!事件教學目錄放置處>
+				<ul style="color: white;" class="showList">
+					<li></li>
+					<li></li>
+				</ul>	
+			</div style="color: white;">	
+			<div style="color: white; float: none;" class="box">
+			<div class="list" style="float: none;">☆插件教學</div>
+			<!插件教學目錄放置處>
+				<ul style="color: white;" class="showList">
+					<li></li>
+					<li></li>
+				</ul>	
+			</div>			
+		</div>	
+		<!頁面右邊內容>
+		<div style="width: 998px; border: 1px solid black; background-color: white;">			
+			<center>			
+				<b style="font-size: 30px">RPG Maker MV 教學</b><br>
+				<br>
+				☆事件教學<br>
+				<br>
+				☆插件教學<br>
+			</center>	
+		</div>
+	</div>
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script>
+	function main() {
+	  	$('.box').hide();
+	  	$('.box').fadeIn(1000);
+	  
+	  	$('.showList').hide();
+	  
+	  	$('.list').on('click', function() {
+			$(this).next().slideToggle(400);
+	    	$(this).toggleClass('active');	    	
+		});
+	}
+
+$(document).ready(main);
+</script>
+</body>
+</html>

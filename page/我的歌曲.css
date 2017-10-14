@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+}
+#content {
+	width: 1280px;
+	background-color: black;
+}
+#content div {
+	float: left;
+}
