@@ -1,3 +1,17 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #06023c;
+}
 div {
 	width: 1290px;
 }
@@ -16,7 +30,6 @@ div {
 #choice a {
 	border-left: 6px dotted white;
 	background-color: black;
-	/*display: inline;*/
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
@@ -26,5 +39,9 @@ div {
 }
 #content iframe {
 	border: 3px solid black;
+	float: left;;
+}
+#content div {
+	float: left;
 }
 

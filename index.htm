@@ -9,7 +9,7 @@
 	<!/*我的LOGO與TITLE*/>
 	<div id="myTitle" style="vertical-align: middle;">
 		羣<sup style="font-size: 20px;">KEN</sup>&#160&#160&#160&#160
-		<sup style="font-size: 20px; text-shadow: 2px 2px yellow;position: absolute; width: 500px">　~我叫羣，我是KEN，歡迎來到我的世界!!~</sup>
+		<sup style="font-size: 20px; text-shadow: 2px 2px yellow;">　~我叫羣，我是KEN，歡迎來到我的世界!!~</sup>
 	</div>
 	<!/*選項標籤*/>
 	<div id="choice">
@@ -29,11 +29,28 @@
 	<!/*內文(含目錄與實際內容)*/>
 	<div id="content">
 		<iframe src="PDF/首頁.pdf" name="PDFcontent" 
-		width="1283.5px" height="500px"></iframe>
+		width="1283.5px" height="500px" ></iframe>
+	</div>
+	<!bottom>
+	<div style="background-color: black;">
+    	
+		<a href="" >
+			<img src="img/FB.png" width="100px">
+		</a>
+		<a href="" >
+			<img src="img/youtube.png" width="100px">
+		</a>
+		<a href="" >
+			<img src="img/Gmail.png" width="100px">
+		</a>
+		<p id="date" style="color: white; float: right; line-height: 150px;"></p>
 	</div>
 	
+	
 
-
-
+<script>
+document.getElementById("date").innerHTML = Date() + " &#160";
+</script>
+<script type="text/javascript" src="js/ie8.polyfils.min.js"></script>
 </body>
 </html>
