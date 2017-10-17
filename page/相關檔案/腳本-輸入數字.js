@@ -1,0 +1,1 @@
+$gameMessage.setNumberInput(var, digits); //var:要存取的變數,digit:數字位數
