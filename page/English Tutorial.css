@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+}
+#content {
+	width: 1280px;
+}
+#content div {
+	float: left;
+}
+li a {
+	text-decoration: none;
+	color: white;
+}
+#real p {
+	text-align: right; 
+	font-size: 15px
+}
+p a {
+	text-decoration: none;
+}
